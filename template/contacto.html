@@ -1,0 +1,91 @@
+<div id="divTitulo" class="titulo">
+Contacto
+</div>
+<!-- Informacion -->
+<div class="divMiddle">
+	<table class="texto">
+		<tr>
+			<td colspan="2" align="center" style="background-color: #642742;"><strong style="color: #FFFFFF">Mar del Plata</strong></td>
+		</tr>
+		<tr style="background-color: #F2DEE7">
+			<td><img src="./images/con_address.png"></td>
+			<td>
+				<p>Avellaneda 1418 2º Piso - Oficina C</p>
+				<p>B7600DUA - Mar del Plata - Bs. As. - Argentina &nbsp;</p>
+			</td>
+		</tr>
+		<tr style="background-color: #F2DEE7">
+			<td><img src="./images/con_tel.png"></td>
+			<td>
+				<p>(0223) 486-2723</p>
+			</td>
+		</tr>
+		<tr style="background-color: #F2DEE7">
+			<td><img src="./images/con_mobile.png"></td>
+			<td colspan="3">
+				<p>(0223) 155-432626</p>
+			</td>
+		</tr>
+		<tr style="background-color: #F2DEE7">
+			<td><img src="./images/con_info.png"></td>
+			<td colspan="3">
+				<p>El Estudio atiende de 9 hs. a 13 hs. y 16 a 21 hs.</p>
+			</td>
+		</tr>
+		<tr style="background-color: #F2DEE7">
+			<td><img src="./images/emailButton.png"></td>
+			<td colspan="3">
+				<p><a href="mailto:horaciocaruso@carusoh.com.ar">horaciocaruso@carusoh.com.ar</a></p>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<!-- Contacto -->
+<div class="divMiddle">
+	<table class="tableFont">
+		<tr>
+			<td>
+			<table>
+				<tr>
+					<td align="right">Escriba su nombre y apellido:</td>
+					<td>&nbsp;</td>
+					<td><input type="text" class="inputText" name="txtName" width="50" maxlength="50" onkeypress="javascript:doHideNameTD();"> 
+					&nbsp;
+						<div id="NameTD" style="display: none;" align="left" class="errorMessages">El Nombre es obligatorio</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">Direccion de E-Mail:</td>
+					<td>&nbsp;</td>
+					<td><input type="text" class="inputText" name="txtEmail" width="50" maxlength="150" onkeypress="javascript:doHideEmailTD();"> 
+					&nbsp;
+						<div id="EmailTD" style="display: none;" align="left" class="errorMessages">Ingrese una dirección de correo válida. Ej: info@carusoh.com.ar</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">Tema del Mensaje:</td>
+					<td>&nbsp;</td>
+					<td><input type="text" class="inputText" name="txtSubject" width="50" maxlength="50" onkeypress="javascript:doHideSubjectTD();"> 
+					&nbsp;
+						<div id="SubjectTD" style="display: none;" align="left" class="errorMessages">El Tema es obligatorio</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">Escriba su mensaje:</td>
+					<td>&nbsp;</td>
+					<td><textarea name="txtArea" class="inputText" rows="15" cols="40" onkeypress="javascript:doHideMessageTD();"></textarea>
+					&nbsp;
+						<div id="MessageTD" style="display: none;" align="left" class="errorMessages">El Mensaje es obligatorio</div>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td><input type="button"  name="btnSend" onclick="doConfirm();" value="Enviar"></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+	</table>
+</div>

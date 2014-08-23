@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sitemap-generator-url="http://www.auditmypc.com/free-sitemap-generator.asp" -->
+<!-- This sitemap was created using the free tool found here: http://www.auditmypc.com/free-sitemap-generator.asp -->
+<!-- Audit My PC also offers free security tools to help keep you safe during internet travels -->
+<urlset 
+		xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+		http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+<url>
+    <loc>http://www.carusoh.com.ar</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/styles/layout.css</loc>
+    <lastmod>2009-01-18T16:13:43-02:00</lastmod>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/styles/Menu/cssverticalmenu.css</loc>
+    <lastmod>2009-01-17T21:25:20-02:00</lastmod>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/bodyTemplate.php?idMenu=1</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/bodyTemplate.php?idMenu=2</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/bodyTemplate.php?idMenu=3</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/bodyTemplate.php?idMenu=4</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/bodyTemplate.php?idMenu=5</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/artEspecialidad.php?idEspecialidad=3</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/artEspecialidad.php?idEspecialidad=2</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/artEspecialidad.php?idEspecialidad=1</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/titular.php?idLink=1</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/titular.php?idLink=2</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/titular.php?idLink=3</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/titular.php?idLink=4</loc>
+</url>
+<url>
+    <loc>http://www.carusoh.com.ar/titular.php?idLink=6</loc>
+</url>
+</urlset>

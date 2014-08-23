@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+		<title>Dr. Horacio F. Caruso</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Language" content="es">
+		<meta name="generator" content="Geany 0.14">
+		<meta name="Keywords" content="estudio juridico, horacio, caruso">
+		<meta name="Description" content="estudio juridico, horacio, caruso">
+		<meta name="Author" content="Veronica Nisenbaum">
+		<meta name="Copyright" content="Veronica Nisenbaum">
+		<meta name="verify-v1" content="nnFHjcAqWybeMsouyOHY9464KZn0s7H1Ok5BGKJv7Fk=">
+		<link rel="stylesheet" href="styles/layout.css" type="text/css">
+ 		<link rel="stylesheet" href="styles/Menu/cssverticalmenu.css" type="text/css">
+		<script type="text/javascript" src="js/ajax_library.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery_cycle_plugin.js"></script>
+		<script type="text/javascript" src="js/Menu/jsverticalmenu.js"></script>
+		
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-7109017-1', 'carusoh.com.ar');
+		  ga('send', 'pageview');
+		
+		</script>
+
+		<script type="text/javascript">
+		var idLink = {idLink};
+		var anchorLink = "{anchorName}";
+		function doGoToMenu(dir){
+			postProcessFunction = new Function("");
+		 	retrieveURL(dir,'divBody');
+		}
+		function gotoAnchor() {
+			if (idLink!=0){
+				location.href=anchorLink;
+			}
+		}
+	
+		//Chequea un campo EMAIL
+		function checkEmailAceptar(valor) {
+			var s = valor;
+			var filter=/^[A-Za-z][A-Za-z0-9_.]*@[A-Za-z0-9_-]+\.[A-Za-z0-9_.]+[A-za-z]$/;
+			if (s.length == 0 ) 
+				return true;
+			if (filter.test(s)){
+				return true;
+			}else{
+				return false;
+			}
+		}
+	
+		function doValidateContacto(){
+			var frm = document.frmTemplate;
+			var cad = "";
+	
+			if (frm.txtName.value == '')
+				cad = cad + "- El Nombre y Apellido es obligatorio.\n";
+			if ((frm.txtEmail.value == '') || (frm.txtEmail.value != '') && (!checkEmailAceptar(frm.txtEmail.value)))
+				cad = cad + "- Ingrese una dirección de correo válida. Ej: info@carusoh.com.ar\n";	
+			if (frm.txtSubject.value == '')
+				cad = cad + "- El Tema es obligatorio.\n";
+			if (frm.txtArea.value == '')
+				cad = cad + "- El Mensaje es obligatorio.\n";	
+	
+			if (cad == "")	
+				return true;
+			else
+				return false;
+		}
+		
+		function doShowTD(){
+			var frm = document.frmTemplate;
+			var cad = "";
+	
+			nameTD = document.getElementById("NameTD");
+			emailTD = document.getElementById("EmailTD");
+			subjectTD = document.getElementById("SubjectTD");
+			messageTD = document.getElementById("MessageTD");
+			
+			if (frm.txtName.value == '')
+				nameTD.style.display = "inline";
+			if ((frm.txtEmail.value == '') || (frm.txtEmail.value != '') && (!checkEmailAceptar(frm.txtEmail.value)))
+				emailTD.style.display = "inline";	
+			if (frm.txtSubject.value == '')
+				subjectTD.style.display = "inline";
+			if (frm.txtArea.value == '')
+				messageTD.style.display = "inline";
+		}
+	
+		function doHideNameTD(){
+			td = document.getElementById("NameTD");
+			td.style.display = "none";
+		}
+	
+		function doHideEmailTD(){
+			td = document.getElementById("EmailTD");
+			td.style.display = "none";
+		}
+	
+		function doHideSubjectTD(){
+			td = document.getElementById("SubjectTD");
+			td.style.display = "none";
+		}
+	
+		function doHideMessageTD(){
+			td = document.getElementById("MessageTD");
+			td.style.display = "none";
+		}
+		
+		function doConfirm(){
+			var frm = document.frmTemplate;
+	
+			if (doValidateContacto()){
+				frm.action = 'sendMail.php';
+				frm.submit();
+			}else{
+				doShowTD();
+			}
+		}
+
+        $(document).ready(function() {
+            $('#divBody').bind("contextmenu",function(e){
+                return false;
+            });
+        });
+
+		</script>
+
+        <style type="text/css" media="print">
+            BODY {display:none;visibility:hidden;}
+        </style>
+	</head>
+	
+	<body onload="gotoAnchor();">
+		<!-- GENERAL CONTAINER -->
+		<form name="frmTemplate" method="post" action="">
+		<div class="main">
+			<div style="padding: 10px;">
+				<div> 
+					<img src="./images/header2.png" width="980px" height="200" alt="Banner">   
+				</div> 
+				<div style="padding: 10px;">
+					<div style="float: left; padding: 10px;">
+						
+						<object type="application/x-shockwave-flash" data="./mp3/player_mp3.swf?autoplay=1" width="200" height="20">
+						<param name="movie" value="./mp3/player_mp3.swf?autoplay=1" />
+						<param name="FlashVars" value="mp3=./mp3/musica/bilitis.mp3&
+						bgcolor1=ffffff&bgcolor2=ecd4e0&
+						buttoncolor=8a5971&buttonovercolor=0&
+						slidercolor1=ecd4e0&slidercolor2=8a5971&
+						sliderovercolor=6a2b4a&textcolor=0" />
+						</object>
+					</div>
+				</div>
+			</div>
+			<!-- HEADER
+			<table>
+				<tr>
+					<td width="100%">
+						
+					</td>
+				</tr>
+			</table> -->
+			<div class="secondline"></div>
+			<div class="firstline"></div>
+			<!-- / HEADER -->
+			<!-- CENTRAL -->
+			<div class="central">
+				<!-- MIDDLE COLUMN -->
+				<div class="colmid" id="divBody">
+					<div class="fix3pix">
+						<div>
+							{body}
+						</div>
+					</div>
+				</div>
+				<!--  / MIDDLE COLUMN -->
+				<!-- LEFT COLUMN  -->
+				<div class="colleft" id="colleft">
+					{menu}
+				</div>
+				<!-- / LEFT COLUMN -->
+				
+				
+			</div>
+			<!-- /CENTRAL -->
+			<!-- FOOTER -->
+			<div class="footer">
+				Copyright 2009 - <b>Horacio F. Caruso</b> - Te.: <b>(0223) 486-2723 </b> - email: <a href="mailto:horaciocaruso@carusoh.com.ar">horaciocaruso@carusoh.com.ar</a> - Powered by <strong>Verónica Nisenbaum</strong>
+			</div>
+			<!-- / FOOTER -->
+		</div>
+		<!-- / GENERAL CONTAINER -->
+		</form>
+	</body>
+</html>
+						
